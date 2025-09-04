@@ -18,12 +18,20 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // EcoCheck variants
+        eco: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-button transition-eco",
+        "eco-scan": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-eco rounded-full w-20 h-20 text-lg font-semibold",
+        "eco-secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-card",
+        "eco-accent": "bg-accent text-accent-foreground hover:bg-accent/90 shadow-card",
+        "eco-outline": "border-2 border-primary text-primary bg-background hover:bg-primary/5",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base font-semibold",
         icon: "h-10 w-10",
+        "scan": "h-20 w-20",
       },
     },
     defaultVariants: {

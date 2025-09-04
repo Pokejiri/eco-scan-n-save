@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Roboto', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +56,26 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				eco: {
+					'grade-a': 'hsl(var(--eco-grade-a))',
+					'grade-b': 'hsl(var(--eco-grade-b))',
+					'grade-c': 'hsl(var(--eco-grade-c))',
+					'grade-d': 'hsl(var(--eco-grade-d))',
 				}
+			},
+			backgroundImage: {
+				'eco-primary': 'var(--gradient-eco-primary)',
+				'eco-secondary': 'var(--gradient-eco-secondary)',
+				'eco-accent': 'var(--gradient-eco-accent)',
+			},
+			boxShadow: {
+				'eco': 'var(--shadow-eco)',
+				'card': 'var(--shadow-card)',
+				'button': 'var(--shadow-button)',
+			},
+			transitionTimingFunction: {
+				'eco': 'var(--transition-eco)',
+				'bounce-gentle': 'var(--bounce-gentle)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
